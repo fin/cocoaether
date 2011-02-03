@@ -8,7 +8,7 @@
 		<string>-add</string>
 	</dict>
 	<key>CYLastWindowPosition</key>
-	<string>{1226, 156}</string>
+	<string>{1181, 121}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -24,7 +24,7 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>0</integer>
+	<integer>5</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
@@ -33,6 +33,10 @@
 		<string>mh+apple@xbhd.org</string>
 		<key>Path</key>
 		<string>testwidget</string>
+		<key>SavePath</key>
+		<string>/Users/fin</string>
+		<key>WidgetDeployName</key>
+		<string>AetherWidget.dcproj</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
@@ -51,7 +55,7 @@
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>69 137 1004 738 0 0 1680 1028 </string>
+	<string>124 111 1004 738 0 0 1680 1028 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -96,9 +100,7 @@
 		<key>Objects view last selections</key>
 		<array>
 			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>3</integer>
+				<integer>5</integer>
 			</array>
 		</array>
 		<key>Opened Steps</key>

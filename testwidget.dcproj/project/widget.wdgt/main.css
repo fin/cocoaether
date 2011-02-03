@@ -222,7 +222,7 @@ body, html {
     display: table-row;
     font-size: 14px;
     line-height: 1.5;
-    color: gray;
+    color: lightgray;
 }
 
 #container div.sendto {

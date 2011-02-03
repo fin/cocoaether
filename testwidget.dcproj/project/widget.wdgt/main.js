@@ -259,7 +259,8 @@ function progress(transfer, computer, uri, fraction) {
         
         var a = document.createElement('a');
         var no = Math.random()*1000;
-        stupidcancelfunctions[no] = function() {transfer.cancel();};
+        var trans = transfer;
+        stupidcancelfunctions[""+no] = function() {trans.cancel();};
         a.href="javascript:stupidcancelfunctions["+no+"]();";
         a.style.marginLeft='105px';
         a.style.position='absolute'

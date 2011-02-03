@@ -77,19 +77,24 @@ class ReceiveHandler(object):
 
         if not transfer:
             transfer = FoundComputer.Transfer.alloc().init()
-            transfer.peer = computer
+            service.transfers.append(transfer)
+            transfer.peer = service
             transfer.uri = name
             transfer.controller = self.controller
 
         if transfer.cancelled:
-            server.transport.loseConnection()
-            transfer.failed()
+            self.controller.log_("transfer cancelled, stopping")
+            try:
+                server.transport.loseConnection()
+                transfer.failed()
+            except Exception, e:
+                self.controller.log_(e)
             return
 
         if failed:
             transfer.failed()
             return
-        
+
         transfer.progress(received, total)
 
 class ReactorLoop(Thread):

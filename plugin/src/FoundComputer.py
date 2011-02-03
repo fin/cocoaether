@@ -40,7 +40,7 @@ class Transfer(NSObject):
         self.controller.call('progress', [self, self.peer.element, self.uri, 1])
 
     def cancel(self):
-        self.controller.log("cancelling")
+        self.controller.log_("cancelling")
         self.cancelled = True
         if self.sender:
             self.sender.cancel()
